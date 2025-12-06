@@ -1,6 +1,6 @@
 server:
   forward-headers-strategy: framework
-  port: 8081
+  port: ${PORT:8081}
 
 security:
   api:
@@ -8,8 +8,8 @@ security:
       - ${SECURITY_API_KEYS:RAPID_API_INTERNAL_KEY_12345}
 
     rate-limit:
-      per-second: 5
-      per-minute: 100
+      per-second: 20
+      per-minute: 1200
 
 spring:
   application:
