@@ -1,17 +1,23 @@
 package com.validator.api.service;
 
 import com.validator.api.dto.response.EmailValidationResponse;
+import com.validator.api.validator.SMTPValidator;
+import com.validator.api.validator.SmtpResult;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.xbill.DNS.Lookup;
 import org.xbill.DNS.Record;
 import org.xbill.DNS.Type;
-import com.validator.api.exception.GlobalExceptionHandler.InvalidEmailException;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class EmailValidationService {
+
+    private final DomainReputationService reputationService;
+    private final RiskScoringService riskScoringService;
 
     public EmailValidationResponse validate(String email) {
 
@@ -25,6 +31,10 @@ public class EmailValidationService {
                     .roleBased(false)
                     .score(0)
                     .domain(null)
+                    .reputationScore(null)
+                    .reputationCategory("unknown")
+                    .riskScore(100)
+                    .riskLevel("CRITICAL")
                     .build();
         }
 
@@ -41,13 +51,17 @@ public class EmailValidationService {
                     .roleBased(false)
                     .score(0)
                     .domain(null)
+                    .reputationScore(null)
+                    .reputationCategory("bad")
+                    .riskScore(100)
+                    .riskLevel("CRITICAL")
                     .build();
         }
 
         // 4 Extract domain safely
         String domain = extractDomain(email);
 
-        // 5 Validate domain
+        // 5 Validate domain signals
         boolean hasMx = hasMxRecord(domain);
         boolean disposable = isDisposable(domain);
         boolean roleBased = isRoleBased(email);
@@ -55,27 +69,52 @@ public class EmailValidationService {
         // 6 Email quality score (0–100)
         int score = calculateScore(syntaxValid, hasMx, disposable);
 
+        // 7 SMTP check (Your working SMTPValidator)
+        SmtpResult smtpResult = SMTPValidator.validate(email, domain);
+        String smtpStatus = smtpResult.getStatus(); // valid | invalid | unknown
+
+        // 8 DOMAIN REPUTATION
+        DomainReputationService.DomainReputation rep = reputationService.evaluate(domain);
+        Integer reputationScore = rep.getReputationScore();    // may be null
+        String reputationCategory = rep.getCategory();
+
+        // 9 RISK SCORING
+        RiskScoringService.RiskResult risk = riskScoringService.computeRisk(
+                syntaxValid,
+                hasMx,
+                disposable,
+                roleBased,
+                smtpStatus,
+                reputationScore,
+                score
+        );
+
+        // 10 Final API response
         return EmailValidationResponse.builder()
                 .syntaxValid(syntaxValid)
                 .hasMxRecord(hasMx)
-                .smtpStatus("unknown")  // SMTP check can be added later
+                .smtpStatus(smtpStatus)
                 .disposable(disposable)
                 .roleBased(roleBased)
                 .score(score)
                 .domain(domain)
+                .reputationScore(reputationScore)
+                .reputationCategory(reputationCategory)
+                .riskScore(risk.getRiskScore())
+                .riskLevel(risk.getRiskLevel())
                 .build();
     }
 
-    // Extract domain safely
+
+    // ===== HELPERS =====
+
     private String extractDomain(String email) {
         if (!email.contains("@")) return null;
         return email.substring(email.indexOf("@") + 1).toLowerCase();
     }
 
-    // MX record lookup
     private boolean hasMxRecord(String domain) {
         if (domain == null) return false;
-
         try {
             Lookup lookup = new Lookup(domain, Type.MX);
             Record[] records = lookup.run();
@@ -86,7 +125,6 @@ public class EmailValidationService {
         }
     }
 
-    // Disposable domain detection
     private boolean isDisposable(String domain) {
         if (domain == null) return false;
 
@@ -102,7 +140,6 @@ public class EmailValidationService {
         return false;
     }
 
-    // Role-based email (low quality)
     private boolean isRoleBased(String email) {
         if (!email.contains("@")) return false;
         String localPart = email.split("@")[0];
@@ -117,7 +154,7 @@ public class EmailValidationService {
         return false;
     }
 
-    // Email deliverability scoring
+    // Simple quality scoring function
     private int calculateScore(boolean syntax, boolean mx, boolean disposable) {
         int score = 0;
 
