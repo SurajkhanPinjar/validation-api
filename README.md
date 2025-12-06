@@ -1,93 +1,100 @@
-# **🚀 Advanced Validation API**
-
-### **Email • Phone • IP • ZIP • Bulk Validation • API Key Auth • Rate Limiting**
-
-A production-grade validation API built with **Spring Boot**, featuring:
-
-✔ Email validation (syntax, MX, disposable, score)
-
-✔ Phone validation (country, formatting, line type)
-
-✔ IP validation (IPv4/IPv6, private/public)
-
-✔ ZIP code validation (US ZIP metadata)
-
-✔ Bulk validation
-
-✔ API Key Authentication
-
-✔ Global Exception Handling
-
-✔ Built-in Rate Limiting
-
-✔ Swagger UI documentation
 
 ---
 
-# **🆚 Competitor Comparison — Why Choose Our API?**
+# **🚀 Advanced Validation API — All-in-One Identity & Data Quality Validator**
 
-This is a polished SaaS-style comparison that RapidAPI customers LOVE.
+### **Email • Phone • IP • ZIP • Bulk Validation • API Key Auth • Rate Limiting • Swagger UI**
 
-| **Feature / API** | **Our API** | **AbstractAPI** | **APILayer / NumVerify** | **IP2Location** | **ZipCodeAPI** |
+A production-grade API built with **Spring Boot 3**, designed for developers who need **clean, accurate, and fast validation** of digital identity inputs.
+
+This API combines **4+ validation systems** into ONE service:
+
+✔ Email validation (syntax, MX, disposable, SMTP status, reputation score)
+
+✔ Phone validation (format, line type, carrier lookup, VOIP detection, risk scoring)
+
+✔ IP validation (IPv4/IPv6, public/private, reserved)
+
+✔ ZIP code validation (US ZIP → state detection)
+
+✔ Bulk validation (process 100+ items per request)
+
+✔ API Key authentication
+
+✔ Built-in rate limiting
+
+✔ Global exception handling
+
+✔ Fully documented Swagger UI
+
+---
+
+# **🆚 Competitor Comparison — Why Choose Our API? (SaaS Table)**
+
+| **Feature / API** | **Our API** | **AbstractAPI** | **APILayer** | **IP2Location** | **ZipCodeAPI** |
 | --- | --- | --- | --- | --- | --- |
-| **Email Validation** | ✔ Syntax, MX, disposable, scoring | ✔ | ✔ | ✖ | ✖ |
-| **Phone Validation** | ✔ Country auto-detect, line type, formats | ✔ (paid) | ✔ (paid) | ✖ | ✖ |
-| **IP Validation** | ✔ IPv4/IPv6, private/public, reserved ranges | ✔ | ✔ | ✔ Geo but not validation | ✖ |
-| **ZIP Code Validation** | ✔ State lookup + format validation | ✖ | ✖ | ✖ | ✔ (ZIP only) |
-| **Bulk Validation** | ✔ Yes, Email + Phone + IP + ZIP together | Limited | Limited | ✖ | ✖ |
-| **Unified API Request** | ✔ All 4 validations in 1 call | ✖ | ✖ | ✖ | ✖ |
-| **API Key Security** | ✔ Strong header-based API Key | ✔ | ✔ | ✔ | ✔ |
-| **Rate Limiting Included** | ✔ Yes, customizable tiers | Depends | Depends | Depends | Depends |
-| **Error Normalization** | ✔ Consistent structured responses | ✖ | ✖ | ✖ | ✖ |
-| **Swagger UI** | ✔ Full interactive docs | Partial | ✖ | ✖ | ✖ |
-| **Free Tier** | ✔ 500 free monthly requests | Very low | Low | none | none |
+| **Email Validation** | ⭐ Syntax, MX, disposable, SMTP, scoring | ✔ | ✔ | ✖ | ✖ |
+| **Phone Validation** | ⭐ Line type, carrier lookup, VOIP detection, risk scoring | ✔ (paid) | ✔ (paid) | ✖ | ✖ |
+| **IP Validation** | ⭐ IPv4/6, private/public, reserved | ✔ | ✔ | Geo only | ✖ |
+| **ZIP Validation** | ⭐ Valid format + state lookup | ✖ | ✖ | ✖ | ✔ |
+| **Bulk Validation** | ⭐ Email + Phone + IP + ZIP in *one* call | Limited | Limited | ✖ | ✖ |
+| **Single Unified Request** | ⭐ Validate everything in 1 API call | ✖ | ✖ | ✖ | ✖ |
+| **API Key Security** | ✔ Strong header auth | ✔ | ✔ | ✔ | ✔ |
+| **Rate Limiting** | ⭐ Built-in throttle with custom tiers | Depends | Depends | Depends | Depends |
+| **Error Standardization** | ⭐ Clean, consistent JSON errors | ✖ | ✖ | ✖ | ✖ |
+| **Swagger UI** | ⭐ Full interactive docs | Partial | ✖ | ✖ | ✖ |
+| **Free Tier** | ⭐ 500 free monthly requests | Low | Limited | None | None |
 | **Pricing** | 💰 Extremely Affordable | $$$ | $$ | $$ | $$ |
-| **Ease of Use** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
+| **Developer Experience** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ |
 
 ---
 
-# **⭐ Why Our API Looks Strong?**
+# **✨ What Makes Our API Stand Out?**
 
-### **🧩 1. A single unified validator**
+### **1️⃣ A Unified Validator API (Unique Feature)**
 
-No other API validates **Email + Phone + IP + ZIP** in one request.
+Competitors offer separate APIs for each field.
 
-### **🚀 2. Bulk validation across all fields**
+**We do Email + Phone + IP + ZIP in ONE request.**
 
-Competitors give bulk email OR bulk phone — NOT all fields together.
+### **2️⃣ Bulk Validation for All Four Types**
 
-### **👨‍💻 3. Developer-friendly response model**
+Competitors only offer *bulk email* or *bulk phone* → **never combined**.
 
-Your output is **clean, normalized, predictable**:
+### **3️⃣ High-Quality Phone Intelligence**
+
+- Carrier lookup
+- VOIP detection
+- Line type (mobile, landline, toll-free, voip)
+- Risk scoring (0–100)
+- Risk level (LOW / MEDIUM / HIGH / CRITICAL)
+
+### **4️⃣ SMTP Email Verification + Scoring**
+
+- MX + SMTP handshake
+- Disposable domain detection
+- Reputation scoring
+- Role-based email detection
+- Domain reputation (basic)
+
+### **5️⃣ Best Developer DX**
+
+Clean, predictable responses:
 
 ```
 {
   "success": true,
-  "data": { ... }
+  "data": { }
 }
 ```
 
-Most APIs return inconsistent formats.
+### **6️⃣ Beautiful Swagger UI**
 
-### **💸 4. Best free tier on RapidAPI**
-
-500 free requests → more than most well-known vendors.
-
-### **🛡 5. Strong security & rate limiting built-in**
-
-Even top APIs lack structured rate-limit handling responses.
-
-### **⭐ 6. Swagger UI available**
-
-Most paid APIs don’t give interactive test UI.
-
-### **👑 7. You provide ZIP + IP + Phone + Email in one product**
-
-This becomes an **all-in-one identity quality API**, which is rare and sells well.
+With **real examples**, reusable schemas, and deep API docs.
 
 ---
 
-## **📌 Base URL**
+# **🌍 Base URL**
 
 ```
 https://your-domain.com/api/v1/validate
@@ -95,7 +102,7 @@ https://your-domain.com/api/v1/validate
 
 ---
 
-# **🔑 Authentication (API Key Required)**
+# **🔑 Authentication**
 
 Every request must include:
 
@@ -103,13 +110,11 @@ Every request must include:
 X-API-KEY: YOUR_API_KEY_HERE
 ```
 
-Swagger & /health endpoints do not require a key.
+*Swagger & /health endpoints do not require an API key.*
 
 ---
 
-# **📘 Swagger Documentation**
-
-Open the full API docs:
+# **📘 Swagger Documentation**
 
 ```
 https://your-domain.com/swagger-ui/index.html
@@ -117,7 +122,7 @@ https://your-domain.com/swagger-ui/index.html
 
 ---
 
-# **🩺 Health Check Endpoints**
+# **🩺 Health Check Endpoints**
 
 ```
 GET /health
@@ -126,13 +131,11 @@ GET /health/status
 
 ---
 
----
-
 # **📬 1. Full Validation (Email + Phone + IP + ZIP)**
 
 ### **POST /api/v1/validate**
 
-### **📝 Request**
+### **Request:**
 
 ```
 {
@@ -144,13 +147,13 @@ GET /health/status
 }
 ```
 
-### **✅ Response**
+### **Response:**
 
 ```
 {
   "success": true,
   "data": {
-    "email": { "syntaxValid": true, "hasMxRecord": true },
+    "email": { "syntaxValid": true, "hasMxRecord": true, "smtpStatus": "valid" },
     "phone": { "valid": true, "country": "US" },
     "ip": { "valid": true, "type": "public" },
     "zipcode": { "valid": true, "state": "California" }
@@ -162,9 +165,11 @@ GET /health/status
 
 # **📧 2. Quick Email Validation**
 
-### **GET /api/v1/validate/email?email=your@email.com**
+### **GET**
 
-### **✅ Response**
+### **/api/v1/validate/email?email=test@gmail.com**
+
+### **Response:**
 
 ```
 {
@@ -172,7 +177,12 @@ GET /health/status
   "data": {
     "syntaxValid": true,
     "hasMxRecord": true,
-    "disposable": false
+    "smtpStatus": "valid",
+    "disposable": false,
+    "roleBased": false,
+    "domain": "gmail.com",
+    "reputation": "excellent",
+    "score": 98
   }
 }
 ```
@@ -181,17 +191,25 @@ GET /health/status
 
 # **📱 3. Quick Phone Validation**
 
-### **GET /api/v1/validate/phone?phone=9876543210&country=IN**
+### **GET**
 
-### **✅ Response**
+### **/api/v1/validate/phone?phone=+14155552671&country=US**
+
+### **Response:**
 
 ```
 {
   "success": true,
   "data": {
     "valid": true,
-    "country": "IN",
-    "lineType": "mobile"
+    "country": "US",
+    "lineType": "mobile",
+    "carrier": "Verizon Wireless",
+    "voip": false,
+    "internationalFormat": "+1 415-555-2671",
+    "nationalFormat": "(415) 555-2671",
+    "riskScore": 12,
+    "riskLevel": "LOW"
   }
 }
 ```
@@ -200,9 +218,9 @@ GET /health/status
 
 # **🌐 4. Quick IP Validation**
 
-### **GET /api/v1/validate/ip?ip=8.8.8.8**
+### **GET**
 
-### **✅ Response**
+### **/api/v1/validate/ip?ip=8.8.8.8**
 
 ```
 {
@@ -217,11 +235,11 @@ GET /health/status
 
 ---
 
-# **📦 5. Quick ZIP Code Validation**
+# **🏷 5. Quick ZIP Code Validation**
 
-### **GET /api/v1/validate/zipcode?zipcode=94016**
+### **GET**
 
-### **✅ Response**
+### **/api/v1/validate/zipcode?zipcode=94016**
 
 ```
 {
@@ -235,11 +253,13 @@ GET /health/status
 
 ---
 
-# **📚 6. Bulk Validation**
+# **📚 6. Bulk Validation (UPDATED)**
 
-### **POST /api/v1/validate/bulk**
+### **POST**
 
-### **📝 Request**
+### **/api/v1/validate/bulk**
+
+### **Request:**
 
 ```
 {
@@ -253,27 +273,42 @@ GET /health/status
 }
 ```
 
-### **✅ Response**
+### **Response:**
 
 ```
 {
   "success": true,
   "data": {
     "emails": [
-      { "index": 0, "input": "valid@gmail.com", "result": { "syntaxValid": true } },
-      { "index": 1, "input": "wrong-email", "result": { "syntaxValid": false } }
+      {
+        "index": 0,
+        "input": "valid@gmail.com",
+        "result": {
+          "syntaxValid": true,
+          "hasMxRecord": true,
+          "smtpStatus": "valid",
+          "disposable": false,
+          "domain": "gmail.com",
+          "reputation": "excellent",
+          "score": 98
+        }
+      }
     ],
     "phones": [
-      { "index": 0, "input": "+14155552671", "result": { "valid": true } },
-      { "index": 1, "input": "12345", "result": { "valid": false } }
-    ],
-    "ips": [
-      { "index": 0, "input": "8.8.8.8", "result": { "valid": true } },
-      { "index": 1, "input": "300.300.1.1", "result": { "valid": false } }
-    ],
-    "zipcodes": [
-      { "index": 0, "input": "94016", "result": { "valid": true } },
-      { "index": 1, "input": "ABCDE", "result": { "valid": false } }
+      {
+        "index": 0,
+        "input": "+14155552671",
+        "country": "US",
+        "result": {
+          "valid": true,
+          "lineType": "mobile",
+          "carrier": "Verizon Wireless",
+          "voip": false,
+          "internationalFormat": "+1 415-555-2671",
+          "riskScore": 12,
+          "riskLevel": "LOW"
+        }
+      }
     ]
   }
 }
@@ -283,7 +318,7 @@ GET /health/status
 
 # **🚨 7. Error Responses**
 
-### **❌ Missing API Key**
+### **Missing API Key**
 
 ```
 {
@@ -292,7 +327,7 @@ GET /health/status
 }
 ```
 
-### **❌ Invalid API Key**
+### **Invalid API Key**
 
 ```
 {
@@ -301,7 +336,7 @@ GET /health/status
 }
 ```
 
-### **❌ Rate Limit Exceeded**
+### **Rate Limit Exceeded**
 
 ```
 {
@@ -312,52 +347,62 @@ GET /health/status
 
 ---
 
-# **⚙️ Tech Stack**
+# **⚙️ Tech Stack**
 
-- **Java 17**
-- **Spring Boot 3**
-- **Swagger / OpenAPI 3**
-- **Lombok**
-- **DNSJava**
-- **LibPhoneNumber**
-- **Jakarta Validation**
+- Java 17
+- Spring Boot 3
+- Spring Web
+- Lombok
+- DNSJava
+- LibPhoneNumber
+- Jakarta Validation
 
 ---
 
-# **📊 Rate Limiting (Free Tier)**
+# **📊 Rate Limiting**
 
 | **Limit** | **Value** |
-| --- |-----------|
-| Requests per second | **20**    |
-| Requests per minute | **1200**  |
+| --- | --- |
+| Requests/sec | 20 |
+| Requests/min | 1200 |
 
 ---
 
-# **🛡 Security**
+# **🛡 Security**
 
-✔ API Key Authentication
+✔ API Key validation
 
-✔ Custom Exceptions
+✔ Sanitized exception handling
 
-✔ Sanitized Error Messages
+✔ Throttling middleware
 
-✔ Throttling (Rate Limiting)
+✔ Validation on all inputs
 
 ---
 
-# **📦 Project Setup**
-
-### **Run locally:**
+# **📦 Run Locally**
 
 ```
 mvn spring-boot:run
 ```
 
-### **Build jar:**
+### **Build JAR:**
 
 ```
 mvn clean package
 ```
+
+---
+
+# **🚀 Deployment Ready**
+
+✔ Railway
+
+✔ Render
+
+✔ RapidAPI
+
+✔ AWS / GCP / Azure
 
 ---
 
@@ -369,18 +414,4 @@ MIT License — free for commercial use.
 
 # **💬 Support**
 
-If you need help integrating this API, open an issue or contact via RapidAPI.
-
----
-
-# **🚀 Ready for Deployment**
-
-This API is ready for:
-
-✔ RapidAPI
-
-✔ Railway
-
-✔ Render
-
-✔ AWS / GCP / Azure
+For help integrating this API, open an issue or connect via RapidAPI.
