@@ -3,3 +3,10 @@ GET  /api/v1/validate/email?email=
 GET  /api/v1/validate/phone?phone=&country=
 GET  /api/v1/validate/ip?ip=
 GET  /api/v1/validate/zipcode?zipcode=
+
+
+
+Git Commands:
+git add Dockerfile
+git commit -m "Add Dockerfile for Railway deployment"
+git push origin main

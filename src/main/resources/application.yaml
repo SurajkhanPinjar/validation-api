@@ -1,6 +1,15 @@
 server:
   port: 8081
 
+security:
+  api:
+    keys:
+      - ${SECURITY_API_KEYS:RAPID_API_INTERNAL_KEY_12345}
+
+    rate-limit:
+      per-second: 5
+      per-minute: 100
+
 spring:
   application:
     name: advanced-validation-api
