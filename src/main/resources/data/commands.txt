@@ -1,0 +1,5 @@
+POST /api/v1/validate
+GET  /api/v1/validate/email?email=
+GET  /api/v1/validate/phone?phone=&country=
+GET  /api/v1/validate/ip?ip=
+GET  /api/v1/validate/zipcode?zipcode=

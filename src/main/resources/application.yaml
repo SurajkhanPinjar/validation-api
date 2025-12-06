@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: advanced-validation-api
+
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    org.springdoc: DEBUG
+    org.springframework.web: DEBUG
+    com.validator.api: DEBUG
+
+  # Optional: file logging
+  file:
+    name: logs/validator-api.log
+
+  # Optional: rolling logs
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 7

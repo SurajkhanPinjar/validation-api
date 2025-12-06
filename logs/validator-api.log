@@ -1,0 +1,832 @@
+2025-12-06T13:45:50.170+05:30  INFO 68227 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Starting ValidationApiApplicationTests using Java 17.0.15 with PID 68227 (started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T13:45:50.170+05:30 DEBUG 68227 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Running with Spring Boot v3.4.12, Spring v6.2.14
+2025-12-06T13:45:50.171+05:30  INFO 68227 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T13:45:50.604+05:30  INFO 68227 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Started ValidationApiApplicationTests in 0.554 seconds (process running for 0.849)
+2025-12-06T13:45:53.354+05:30  INFO 68238 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 68238 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T13:45:53.355+05:30 DEBUG 68238 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.4.12, Spring v6.2.14
+2025-12-06T13:45:53.355+05:30  INFO 68238 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T13:45:53.701+05:30  INFO 68238 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T13:45:53.709+05:30  INFO 68238 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T13:45:53.709+05:30  INFO 68238 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-06T13:45:53.727+05:30  INFO 68238 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T13:45:53.727+05:30  INFO 68238 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 351 ms
+2025-12-06T13:45:53.892+05:30  INFO 68238 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T13:45:53.897+05:30  INFO 68238 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.735 seconds (process running for 0.849)
+2025-12-06T13:46:00.137+05:30  INFO 68238 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T13:46:00.137+05:30  INFO 68238 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T13:46:00.138+05:30  INFO 68238 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-06T13:47:13.420+05:30  INFO 68238 --- [advanced-validation-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-06T13:47:13.425+05:30  INFO 68238 --- [advanced-validation-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-06T13:47:16.282+05:30  INFO 68253 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 68253 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T13:47:16.283+05:30 DEBUG 68253 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.4.12, Spring v6.2.14
+2025-12-06T13:47:16.283+05:30  INFO 68253 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T13:47:16.617+05:30  INFO 68253 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T13:47:16.621+05:30  INFO 68253 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T13:47:16.622+05:30  INFO 68253 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-06T13:47:16.640+05:30  INFO 68253 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T13:47:16.640+05:30  INFO 68253 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
+2025-12-06T13:47:16.724+05:30 DEBUG 68253 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2025-12-06T13:47:16.743+05:30 DEBUG 68253 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T13:47:16.751+05:30 DEBUG 68253 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T13:47:16.764+05:30 DEBUG 68253 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T13:47:16.793+05:30  INFO 68253 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T13:47:16.797+05:30  INFO 68253 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.712 seconds (process running for 0.819)
+2025-12-06T13:47:20.675+05:30  INFO 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T13:47:20.675+05:30  INFO 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T13:47:20.675+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T13:47:20.675+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T13:47:20.675+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T13:47:20.676+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1efa349e
+2025-12-06T13:47:20.676+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@714d5ec
+2025-12-06T13:47:20.676+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T13:47:20.676+05:30  INFO 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-06T13:47:20.679+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2025-12-06T13:47:20.684+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-06T13:47:20.783+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-12-06T13:47:20.785+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json, application/yaml]
+2025-12-06T13:47:20.785+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframewor (truncated)...]
+2025-12-06T13:47:20.787+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-12-06T13:47:20.788+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-12-06T13:47:20.824+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2025-12-06T13:47:20.825+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-06T13:47:20.826+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2025-12-06T13:47:20.826+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-12-06T13:47:20.826+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/yaml]
+2025-12-06T13:47:20.826+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=No static resource favicon.ico.}]
+2025-12-06T13:47:20.827+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-12-06T13:47:20.828+05:30 DEBUG 68253 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-12-06T13:48:21.717+05:30  INFO 68253 --- [advanced-validation-api] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-06T13:48:21.720+05:30  INFO 68253 --- [advanced-validation-api] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-06T13:50:15.831+05:30  INFO 68576 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Starting ValidationApiApplicationTests using Java 17.0.15 with PID 68576 (started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T13:50:15.831+05:30 DEBUG 68576 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T13:50:15.832+05:30  INFO 68576 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T13:50:15.840+05:30 DEBUG 68576 --- [advanced-validation-api] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7e8e8651
+2025-12-06T13:50:16.026+05:30  WARN 68576 --- [advanced-validation-api] [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: java.lang.IllegalStateException: Error processing condition on org.springdoc.webmvc.ui.SwaggerConfig.springWebProvider
+2025-12-06T13:50:16.029+05:30  INFO 68576 --- [advanced-validation-api] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-06T13:50:16.035+05:30 ERROR 68576 --- [advanced-validation-api] [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Error processing condition on org.springdoc.webmvc.ui.SwaggerConfig.springWebProvider
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:183) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.2.5.jar:3.2.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springdoc.webmvc.ui.SwaggerConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:750) ~[spring-beans-6.1.13.jar:6.1.13]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:749) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:682) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:653) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1687) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:562) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:534) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:247) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:240) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:230) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:183) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:158) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	... 95 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/servlet/resource/LiteWebJarsResourceResolver
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.13.jar:6.1.13]
+	... 111 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.servlet.resource.LiteWebJarsResourceResolver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 124 common frames omitted
+
+2025-12-06T13:50:16.039+05:30  WARN 68576 --- [advanced-validation-api] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.validator.api.ValidationApiApplicationTests@895416d]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@5df778c3 testClass = com.validator.api.ValidationApiApplicationTests, locations = [], classes = [com.validator.api.ValidationApiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@248e319b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@543295b0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@712625fd, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@5afa3c9, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@7d9d0818, org.springframework.boot.test.context.SpringBootTestAnnotation@2b4fd76d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.10.3.jar:5.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.3.jar:1.10.3]
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122) ~[surefire-junit-platform-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.2.5.jar:3.2.5]
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springdoc.webmvc.ui.SwaggerConfig.springWebProvider
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:183) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.3.4.jar:3.3.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.13.jar:6.1.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.13.jar:6.1.13]
+	... 73 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springdoc.webmvc.ui.SwaggerConfig] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@42110406]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:360) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:417) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$1(AbstractAutowireCapableBeanFactory.java:750) ~[spring-beans-6.1.13.jar:6.1.13]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:749) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:682) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:653) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1687) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:562) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:534) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:247) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:240) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:230) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:183) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:158) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	... 95 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/servlet/resource/LiteWebJarsResourceResolver
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[na:na]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[na:na]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681) ~[na:na]
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.13.jar:6.1.13]
+	... 111 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.servlet.resource.LiteWebJarsResourceResolver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 124 common frames omitted
+
+2025-12-06T13:53:04.438+05:30  INFO 68623 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Starting ValidationApiApplicationTests using Java 17.0.15 with PID 68623 (started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T13:53:04.439+05:30 DEBUG 68623 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T13:53:04.439+05:30  INFO 68623 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T13:53:04.448+05:30 DEBUG 68623 --- [advanced-validation-api] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f325091
+2025-12-06T13:53:04.815+05:30 DEBUG 68623 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2025-12-06T13:53:04.836+05:30 DEBUG 68623 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T13:53:04.845+05:30 DEBUG 68623 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T13:53:04.855+05:30 DEBUG 68623 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T13:53:04.881+05:30  INFO 68623 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Started ValidationApiApplicationTests in 0.551 seconds (process running for 0.84)
+2025-12-06T13:53:05.205+05:30 DEBUG 68623 --- [advanced-validation-api] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@f325091, started on Sat Dec 06 13:53:04 IST 2025
+2025-12-06T13:53:10.519+05:30  INFO 68635 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 68635 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T13:53:10.520+05:30 DEBUG 68635 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T13:53:10.521+05:30  INFO 68635 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T13:53:10.853+05:30  INFO 68635 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T13:53:10.857+05:30  INFO 68635 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T13:53:10.858+05:30  INFO 68635 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T13:53:10.875+05:30  INFO 68635 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T13:53:10.875+05:30  INFO 68635 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 338 ms
+2025-12-06T13:53:10.965+05:30 DEBUG 68635 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2025-12-06T13:53:10.983+05:30 DEBUG 68635 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T13:53:10.990+05:30 DEBUG 68635 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T13:53:10.998+05:30 DEBUG 68635 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T13:53:11.025+05:30  INFO 68635 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T13:53:11.029+05:30  INFO 68635 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.677 seconds (process running for 0.809)
+2025-12-06T13:53:13.971+05:30  INFO 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T13:53:13.975+05:30  INFO 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T13:53:13.976+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T13:53:13.977+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T13:53:13.978+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T13:53:13.978+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4366c25b
+2025-12-06T13:53:13.979+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5af5d23d
+2025-12-06T13:53:13.979+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T13:53:13.979+05:30  INFO 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-06T13:53:13.983+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-12-06T13:53:13.987+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-06T13:53:14.004+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T13:53:14.226+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2025-12-06T13:53:14.227+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-12-06T13:53:14.233+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-12-06T13:53:14.234+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/swagger-ui/oauth2-re (truncated)...]
+2025-12-06T13:53:14.236+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T13:53:14.240+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2025-12-06T13:53:14.241+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-06T13:53:14.338+05:30  INFO 68635 --- [advanced-validation-api] [http-nio-8081-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 94 ms
+2025-12-06T13:53:14.345+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-12-06T13:53:14.346+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-12-06T13:53:14.346+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T13:53:25.643+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T13:53:25.644+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T13:53:25.657+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=string, phone=string, country=string, ip=string, zipcode=string)]
+2025-12-06T13:53:25.666+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidEmail(InvalidEmailException)
+2025-12-06T13:53:25.668+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T13:53:25.668+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid email format}]
+2025-12-06T13:53:25.669+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidEmailException: Invalid email format]
+2025-12-06T13:53:25.670+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T13:53:38.199+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T13:53:38.200+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T13:53:38.200+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=asd@mail.com, phone=string, country=string, ip=string, zipcode=string)]
+2025-12-06T13:53:38.421+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T13:53:38.421+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T13:53:38.421+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Phone validation failed: The string supplied did not seem to be a phone number (truncated)...]
+2025-12-06T13:53:38.421+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Phone validation failed: The string supplied did not seem to be a phone number.]
+2025-12-06T13:53:38.421+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T13:53:49.515+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T13:53:49.516+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T13:53:49.517+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=asd@mail.com, phone=9988776655, country=string, ip=string, zipcode=string)]
+2025-12-06T13:53:49.517+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T13:53:49.518+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T13:53:49.518+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Phone validation failed: Missing or invalid default region.}]
+2025-12-06T13:53:49.519+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Phone validation failed: Missing or invalid default region.]
+2025-12-06T13:53:49.519+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T13:53:58.854+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T13:53:58.855+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T13:53:58.856+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=asd@mail.com, phone=9988776655, country=US, ip=string, zipcode=string)]
+2025-12-06T13:53:58.869+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T13:53:58.870+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T13:53:58.870+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T13:53:58.872+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T13:53:58.872+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T13:54:13.771+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T13:54:13.771+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T13:54:13.772+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=asd@mail.com, phone=9812342198, country=US, ip=string, zipcode=string)]
+2025-12-06T13:54:13.773+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T13:54:13.773+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T13:54:13.773+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T13:54:13.774+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T13:54:13.774+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T13:56:02.524+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/email?email=john.doe%40gmail.com", parameters={masked}
+2025-12-06T13:56:02.527+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateEmail(String)
+2025-12-06T13:56:02.546+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidIp(InvalidIpException)
+2025-12-06T13:56:02.547+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T13:56:02.548+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=IP address cannot be empty}]
+2025-12-06T13:56:02.549+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidIpException: IP address cannot be empty]
+2025-12-06T13:56:02.549+05:30 DEBUG 68635 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:03:03.493+05:30  INFO 68739 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 68739 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T14:03:03.494+05:30 DEBUG 68739 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T14:03:03.494+05:30  INFO 68739 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T14:03:03.841+05:30  INFO 68739 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T14:03:03.848+05:30  INFO 68739 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T14:03:03.848+05:30  INFO 68739 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T14:03:03.866+05:30  INFO 68739 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T14:03:03.866+05:30  INFO 68739 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 355 ms
+2025-12-06T14:03:03.953+05:30 DEBUG 68739 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2025-12-06T14:03:03.971+05:30 DEBUG 68739 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T14:03:03.978+05:30 DEBUG 68739 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T14:03:03.986+05:30 DEBUG 68739 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T14:03:04.015+05:30  INFO 68739 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T14:03:04.018+05:30  INFO 68739 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.69 seconds (process running for 0.808)
+2025-12-06T14:03:09.692+05:30  INFO 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T14:03:09.692+05:30  INFO 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T14:03:09.692+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T14:03:09.692+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T14:03:09.692+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T14:03:09.693+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7b7757e4
+2025-12-06T14:03:09.693+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4f8c6036
+2025-12-06T14:03:09.693+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T14:03:09.693+05:30  INFO 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-06T14:03:09.699+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/email?email=john.doe%40gmail.com", parameters={masked}
+2025-12-06T14:03:09.702+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateEmail(String)
+2025-12-06T14:03:09.745+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:03:09.746+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=EmailValidationResponse(syntaxValid=true, hasMxRecord=true, smtpStatus=unknown, disposable=fal (truncated)...]
+2025-12-06T14:03:09.757+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:03:33.314+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/ip?ip=123123", parameters={masked}
+2025-12-06T14:03:33.315+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateIp(String)
+2025-12-06T14:03:33.320+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:03:33.324+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=IpValidationResponse(valid=true, version=IPv4, isPrivate=false, isReserved=false), success=tru (truncated)...]
+2025-12-06T14:03:33.328+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:03:45.667+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=asdasd&country=US", parameters={masked}
+2025-12-06T14:03:45.667+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:03:45.671+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T14:03:45.672+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:03:45.672+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Phone validation failed: The string supplied did not seem to be a phone number (truncated)...]
+2025-12-06T14:03:45.673+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Phone validation failed: The string supplied did not seem to be a phone number.]
+2025-12-06T14:03:45.673+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:03:55.437+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=123&country=US", parameters={masked}
+2025-12-06T14:03:55.437+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:03:55.448+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T14:03:55.449+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:03:55.450+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T14:03:55.451+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T14:03:55.451+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:04:03.219+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=9988775522&country=US", parameters={masked}
+2025-12-06T14:04:03.219+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:04:03.224+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T14:04:03.226+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:04:03.226+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T14:04:03.227+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T14:04:03.227+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:04:12.451+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=9988778899&country=US", parameters={masked}
+2025-12-06T14:04:12.452+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:04:12.453+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T14:04:12.453+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:04:12.453+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T14:04:12.454+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T14:04:12.454+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:05:52.143+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/email?email=admin%40company.com", parameters={masked}
+2025-12-06T14:05:52.146+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateEmail(String)
+2025-12-06T14:05:52.168+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:05:52.169+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=EmailValidationResponse(syntaxValid=true, hasMxRecord=false, smtpStatus=unknown, disposable=fa (truncated)...]
+2025-12-06T14:05:52.170+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:06:09.181+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/email?email=temp%40tempmail.com", parameters={masked}
+2025-12-06T14:06:09.181+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateEmail(String)
+2025-12-06T14:06:09.826+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:06:09.827+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=EmailValidationResponse(syntaxValid=true, hasMxRecord=true, smtpStatus=unknown, disposable=tru (truncated)...]
+2025-12-06T14:06:09.829+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:06:33.648+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=2025550184&country=US", parameters={masked}
+2025-12-06T14:06:33.648+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:06:33.652+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:06:33.658+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=PhoneValidationResponse(valid=true, country=US, internationalFormat=+1 202-555-0184, nationalF (truncated)...]
+2025-12-06T14:06:33.662+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:06:53.250+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=9876543210&country=US", parameters={masked}
+2025-12-06T14:06:53.250+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:06:53.252+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T14:06:53.252+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:06:53.252+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T14:06:53.253+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T14:06:53.253+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:06:57.802+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/phone?phone=9876543210&country=IN", parameters={masked}
+2025-12-06T14:06:57.802+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validatePhone(String, String)
+2025-12-06T14:06:57.806+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:06:57.807+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=PhoneValidationResponse(valid=true, country=IN, internationalFormat=+91 98765 43210, nationalF (truncated)...]
+2025-12-06T14:06:57.808+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:07:25.867+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/zipcode?zipcode=99501", parameters={masked}
+2025-12-06T14:07:25.868+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateZip(String)
+2025-12-06T14:07:25.870+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:07:25.872+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=ZipValidationResponse(valid=true, state=Alaska, city=null, country=US), success=true}]
+2025-12-06T14:07:25.875+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:07:40.500+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/zipcode?zipcode=591222", parameters={masked}
+2025-12-06T14:07:40.500+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateZip(String)
+2025-12-06T14:07:40.501+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidZip(InvalidZipException)
+2025-12-06T14:07:40.501+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:07:40.502+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=ZIP code must be a 5‑digit number}]
+2025-12-06T14:07:40.503+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidZipException: ZIP code must be a 5‑digit number]
+2025-12-06T14:07:40.503+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:07:46.516+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/validate/zipcode?zipcode=59122", parameters={masked}
+2025-12-06T14:07:46.517+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateZip(String)
+2025-12-06T14:07:46.517+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:07:46.518+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=ZipValidationResponse(valid=true, state=Montana, city=null, country=US), success=true}]
+2025-12-06T14:07:46.518+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:44:21.911+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T14:44:21.914+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T14:44:21.945+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=temp@mailinator.com, phone=123, country=US, ip=999.999.999.999, zipcode=ABCD (truncated)...]
+2025-12-06T14:44:21.965+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.validator.api.exception.GlobalExceptionHandler#handleInvalidPhone(InvalidPhoneException)
+2025-12-06T14:44:21.965+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:44:21.965+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{success=false, error=Invalid phone number format}]
+2025-12-06T14:44:21.966+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.validator.api.exception.GlobalExceptionHandler$InvalidPhoneException: Invalid phone number format]
+2025-12-06T14:44:21.966+05:30 DEBUG 68739 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2025-12-06T14:52:01.811+05:30  INFO 68976 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 68976 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T14:52:01.811+05:30 DEBUG 68976 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T14:52:01.812+05:30  INFO 68976 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T14:52:02.132+05:30  INFO 68976 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T14:52:02.136+05:30  INFO 68976 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T14:52:02.136+05:30  INFO 68976 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T14:52:02.153+05:30  INFO 68976 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T14:52:02.153+05:30  INFO 68976 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 323 ms
+2025-12-06T14:52:02.242+05:30 DEBUG 68976 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 11 mappings in 'requestMappingHandlerMapping'
+2025-12-06T14:52:02.259+05:30 DEBUG 68976 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T14:52:02.267+05:30 DEBUG 68976 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T14:52:02.277+05:30 DEBUG 68976 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T14:52:02.304+05:30  INFO 68976 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T14:52:02.307+05:30  INFO 68976 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.656 seconds (process running for 0.78)
+2025-12-06T14:52:10.578+05:30  INFO 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T14:52:10.579+05:30  INFO 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T14:52:10.579+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T14:52:10.580+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T14:52:10.580+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T14:52:10.581+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1d26d75f
+2025-12-06T14:52:10.581+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@74d92713
+2025-12-06T14:52:10.581+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T14:52:10.581+05:30  INFO 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-06T14:52:10.586+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T14:52:10.589+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T14:52:10.611+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=temp@mailinator.com, phone=123, country=US, ip=999.999.999.999, zipcode=ABCD (truncated)...]
+2025-12-06T14:52:10.683+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:52:10.686+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=FinalValidationResponse(email=EmailValidationResponse(syntaxValid=true, hasMxRecord=true, smtp (truncated)...]
+2025-12-06T14:52:10.694+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:53:16.964+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T14:53:16.965+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T14:53:16.967+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=temp@mailinator.com, phone=123, country=US, ip=999.999.999.999, zipcode=ABCD (truncated)...]
+2025-12-06T14:53:16.970+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:53:16.972+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=FinalValidationResponse(email=EmailValidationResponse(syntaxValid=true, hasMxRecord=true, smtp (truncated)...]
+2025-12-06T14:53:16.974+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T14:53:54.119+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate", parameters={}
+2025-12-06T14:53:54.120+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#validateAll(ValidationRequest)
+2025-12-06T14:53:54.120+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ValidationRequest(email=temp@mailinato, phone=123, country=US, ip=999.999.999.999, zipcode=ABCDE)]
+2025-12-06T14:53:54.122+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T14:53:54.123+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=FinalValidationResponse(email=EmailValidationResponse(syntaxValid=false, hasMxRecord=false, sm (truncated)...]
+2025-12-06T14:53:54.123+05:30 DEBUG 68976 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T15:07:27.363+05:30  INFO 69109 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 69109 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T15:07:27.364+05:30 DEBUG 69109 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T15:07:27.364+05:30  INFO 69109 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T15:07:27.713+05:30  INFO 69109 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T15:07:27.717+05:30  INFO 69109 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T15:07:27.717+05:30  INFO 69109 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T15:07:27.736+05:30  INFO 69109 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T15:07:27.736+05:30  INFO 69109 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 355 ms
+2025-12-06T15:07:27.828+05:30 DEBUG 69109 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T15:07:27.845+05:30 DEBUG 69109 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T15:07:27.853+05:30 DEBUG 69109 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T15:07:27.861+05:30 DEBUG 69109 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T15:07:27.887+05:30  INFO 69109 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T15:07:27.891+05:30  INFO 69109 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.699 seconds (process running for 0.818)
+2025-12-06T15:08:06.656+05:30  INFO 69135 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Starting ValidationApiApplicationTests using Java 17.0.15 with PID 69135 (started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T15:08:06.657+05:30 DEBUG 69135 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T15:08:06.657+05:30  INFO 69135 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T15:08:06.665+05:30 DEBUG 69135 --- [advanced-validation-api] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f325091
+2025-12-06T15:08:07.024+05:30 DEBUG 69135 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T15:08:07.044+05:30 DEBUG 69135 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T15:08:07.052+05:30 DEBUG 69135 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T15:08:07.062+05:30 DEBUG 69135 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T15:08:07.090+05:30  INFO 69135 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Started ValidationApiApplicationTests in 0.54 seconds (process running for 0.816)
+2025-12-06T15:08:07.422+05:30 DEBUG 69135 --- [advanced-validation-api] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@f325091, started on Sat Dec 06 15:08:06 IST 2025
+2025-12-06T15:08:35.906+05:30  INFO 69144 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 69144 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T15:08:35.907+05:30 DEBUG 69144 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T15:08:35.908+05:30  INFO 69144 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T15:08:36.243+05:30  INFO 69144 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T15:08:36.247+05:30  INFO 69144 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T15:08:36.247+05:30  INFO 69144 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T15:08:36.266+05:30  INFO 69144 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T15:08:36.266+05:30  INFO 69144 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 342 ms
+2025-12-06T15:08:36.358+05:30 DEBUG 69144 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T15:08:36.376+05:30 DEBUG 69144 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T15:08:36.383+05:30 DEBUG 69144 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T15:08:36.392+05:30 DEBUG 69144 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T15:08:36.418+05:30  INFO 69144 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T15:08:36.421+05:30  INFO 69144 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.69 seconds (process running for 0.828)
+2025-12-06T15:08:40.385+05:30  INFO 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T15:08:40.385+05:30  INFO 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T15:08:40.385+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T15:08:40.385+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T15:08:40.385+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T15:08:40.386+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@73c4b39d
+2025-12-06T15:08:40.386+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@330ec6b5
+2025-12-06T15:08:40.386+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T15:08:40.386+05:30  INFO 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-06T15:08:40.391+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-12-06T15:08:40.395+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-06T15:08:40.411+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T15:08:40.434+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2025-12-06T15:08:40.435+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-12-06T15:08:40.440+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-12-06T15:08:40.440+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/swagger-ui/oauth2-re (truncated)...]
+2025-12-06T15:08:40.442+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T15:08:40.444+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2025-12-06T15:08:40.445+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-06T15:08:40.544+05:30  INFO 69144 --- [advanced-validation-api] [http-nio-8081-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 96 ms
+2025-12-06T15:08:40.551+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-12-06T15:08:40.552+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-12-06T15:08:40.552+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T15:08:48.342+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate/bulk", parameters={}
+2025-12-06T15:08:48.343+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#bulkValidate(BulkValidationRequest)
+2025-12-06T15:08:48.356+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BulkValidationRequest(emails=[john@gmail.com, temp@mailinator.com, admin@company.com], phones=[BulkV (truncated)...]
+2025-12-06T15:08:48.509+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T15:08:48.514+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=BulkValidationResponse(emails=[EmailValidationResponse(syntaxValid=true, hasMxRecord=true, smt (truncated)...]
+2025-12-06T15:08:48.516+05:30 DEBUG 69144 --- [advanced-validation-api] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T15:27:03.177+05:30  INFO 69244 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 69244 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T15:27:03.179+05:30 DEBUG 69244 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T15:27:03.179+05:30  INFO 69244 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T15:27:03.532+05:30  INFO 69244 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T15:27:03.537+05:30  INFO 69244 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T15:27:03.537+05:30  INFO 69244 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T15:27:03.555+05:30  INFO 69244 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T15:27:03.555+05:30  INFO 69244 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 354 ms
+2025-12-06T15:27:03.646+05:30 DEBUG 69244 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T15:27:03.662+05:30 DEBUG 69244 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T15:27:03.669+05:30 DEBUG 69244 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T15:27:03.678+05:30 DEBUG 69244 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T15:27:03.704+05:30  INFO 69244 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T15:27:03.708+05:30  INFO 69244 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.703 seconds (process running for 0.831)
+2025-12-06T15:27:12.546+05:30  INFO 69261 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Starting ValidationApiApplicationTests using Java 17.0.15 with PID 69261 (started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T15:27:12.547+05:30 DEBUG 69261 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T15:27:12.547+05:30  INFO 69261 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T15:27:12.556+05:30 DEBUG 69261 --- [advanced-validation-api] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f325091
+2025-12-06T15:27:12.899+05:30 DEBUG 69261 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T15:27:12.922+05:30 DEBUG 69261 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T15:27:12.930+05:30 DEBUG 69261 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T15:27:12.939+05:30 DEBUG 69261 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T15:27:12.966+05:30  INFO 69261 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Started ValidationApiApplicationTests in 0.527 seconds (process running for 0.799)
+2025-12-06T15:27:13.305+05:30 DEBUG 69261 --- [advanced-validation-api] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@f325091, started on Sat Dec 06 15:27:12 IST 2025
+2025-12-06T15:27:35.107+05:30  INFO 69271 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 69271 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T15:27:35.108+05:30 DEBUG 69271 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T15:27:35.108+05:30  INFO 69271 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T15:27:35.463+05:30  INFO 69271 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T15:27:35.467+05:30  INFO 69271 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T15:27:35.467+05:30  INFO 69271 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T15:27:35.485+05:30  INFO 69271 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T15:27:35.486+05:30  INFO 69271 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 359 ms
+2025-12-06T15:27:35.583+05:30 DEBUG 69271 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T15:27:35.601+05:30 DEBUG 69271 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T15:27:35.609+05:30 DEBUG 69271 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T15:27:35.617+05:30 DEBUG 69271 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T15:27:35.646+05:30  INFO 69271 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T15:27:35.650+05:30  INFO 69271 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.709 seconds (process running for 0.827)
+2025-12-06T15:30:44.320+05:30  INFO 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T15:30:44.321+05:30  INFO 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T15:30:44.322+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T15:30:44.322+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T15:30:44.322+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T15:30:44.323+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@b00e9be
+2025-12-06T15:30:44.323+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@612db8d3
+2025-12-06T15:30:44.323+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T15:30:44.323+05:30  INFO 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-06T15:30:44.328+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate/bulk", parameters={}
+2025-12-06T15:30:44.332+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#bulkValidate(BulkValidationRequest)
+2025-12-06T15:30:44.358+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BulkValidationRequest(emails=[john@gmail.com, temp@mailinator.com, admin@company.com], phones=[BulkP (truncated)...]
+2025-12-06T15:30:44.774+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T15:30:44.781+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=BulkValidationResponse(emails=[BulkEmailResult(index=0, input=john@gmail.com, result=EmailVali (truncated)...]
+2025-12-06T15:30:44.793+05:30 DEBUG 69271 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T16:53:00.045+05:30  INFO 70009 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 70009 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T16:53:00.046+05:30 DEBUG 70009 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T16:53:00.047+05:30  INFO 70009 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T16:53:00.459+05:30  INFO 70009 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T16:53:00.464+05:30  INFO 70009 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T16:53:00.464+05:30  INFO 70009 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T16:53:00.486+05:30  INFO 70009 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T16:53:00.486+05:30  INFO 70009 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
+2025-12-06T16:53:00.589+05:30 DEBUG 70009 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T16:53:00.608+05:30 DEBUG 70009 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T16:53:00.616+05:30 DEBUG 70009 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T16:53:00.625+05:30 DEBUG 70009 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T16:53:00.651+05:30  INFO 70009 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T16:53:00.655+05:30  INFO 70009 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.801 seconds (process running for 0.961)
+2025-12-06T16:53:11.960+05:30  INFO 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T16:53:11.963+05:30  INFO 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T16:53:11.963+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T16:53:11.963+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T16:53:11.964+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T16:53:11.965+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@26465dbc
+2025-12-06T16:53:11.965+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@793b3dc2
+2025-12-06T16:53:11.966+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T16:53:11.966+05:30  INFO 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-06T16:53:11.971+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-12-06T16:53:11.974+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-06T16:53:11.993+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T16:53:12.058+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2025-12-06T16:53:12.059+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-12-06T16:53:12.066+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-12-06T16:53:12.067+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/swagger-ui/oauth2-re (truncated)...]
+2025-12-06T16:53:12.069+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T16:53:12.072+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2025-12-06T16:53:12.073+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-06T16:53:12.275+05:30  INFO 70009 --- [advanced-validation-api] [http-nio-8081-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 192 ms
+2025-12-06T16:53:12.283+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-12-06T16:53:12.284+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-12-06T16:53:12.284+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T16:53:18.744+05:30 ERROR 70009 --- [advanced-validation-api] [http-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+com.validator.api.exception.ApiKeyMissingException: Missing API Key. Please provide X-API-KEY header.
+	at com.validator.api.security.ApiKeyFilter.doFilter(ApiKeyFilter.java:36) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2025-12-06T16:53:18.762+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2025-12-06T16:53:18.764+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-12-06T16:53:18.769+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T16:53:18.769+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat Dec 06 16:53:18 IST 2025, status=500, error=Internal Server Error, path=/api/v1/valid (truncated)...]
+2025-12-06T16:53:18.774+05:30 DEBUG 70009 --- [advanced-validation-api] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2025-12-06T16:53:44.848+05:30  INFO 70036 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Starting ValidationApiApplicationTests using Java 17.0.15 with PID 70036 (started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T16:53:44.849+05:30 DEBUG 70036 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T16:53:44.849+05:30  INFO 70036 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T16:53:44.858+05:30 DEBUG 70036 --- [advanced-validation-api] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@f325091
+2025-12-06T16:53:45.227+05:30 DEBUG 70036 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T16:53:45.246+05:30 DEBUG 70036 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T16:53:45.255+05:30 DEBUG 70036 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T16:53:45.265+05:30 DEBUG 70036 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T16:53:45.295+05:30  INFO 70036 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplicationTests    : Started ValidationApiApplicationTests in 0.553 seconds (process running for 0.845)
+2025-12-06T16:53:45.621+05:30 DEBUG 70036 --- [advanced-validation-api] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@f325091, started on Sat Dec 06 16:53:44 IST 2025
+2025-12-06T16:53:48.632+05:30  INFO 70046 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 70046 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T16:53:48.633+05:30 DEBUG 70046 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T16:53:48.633+05:30  INFO 70046 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T16:53:48.970+05:30  INFO 70046 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T16:53:48.973+05:30  INFO 70046 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T16:53:48.974+05:30  INFO 70046 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T16:53:48.991+05:30  INFO 70046 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T16:53:48.991+05:30  INFO 70046 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 340 ms
+2025-12-06T16:53:49.079+05:30 DEBUG 70046 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-12-06T16:53:49.097+05:30 DEBUG 70046 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T16:53:49.105+05:30 DEBUG 70046 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T16:53:49.115+05:30 DEBUG 70046 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T16:53:49.144+05:30  INFO 70046 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T16:53:49.148+05:30  INFO 70046 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.689 seconds (process running for 0.826)
+2025-12-06T16:53:54.209+05:30  INFO 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T16:53:54.209+05:30  INFO 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T16:53:54.209+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T16:53:54.209+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T16:53:54.209+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T16:53:54.209+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@67f01755
+2025-12-06T16:53:54.210+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3695d3b1
+2025-12-06T16:53:54.210+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T16:53:54.210+05:30  INFO 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-06T16:53:54.216+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/validate/bulk", parameters={}
+2025-12-06T16:53:54.220+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.validator.api.controller.ValidationController#bulkValidate(BulkValidationRequest)
+2025-12-06T16:53:54.247+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [BulkValidationRequest(emails=[string], phones=[BulkPhoneInput(number=string, country=string)], ips=[ (truncated)...]
+2025-12-06T16:53:54.275+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-12-06T16:53:54.280+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=BulkValidationResponse(emails=[BulkEmailResult(index=0, input=string, result=EmailValidationRe (truncated)...]
+2025-12-06T16:53:54.290+05:30 DEBUG 70046 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
