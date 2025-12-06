@@ -11,6 +11,11 @@ public class PhoneValidationResponse {
     private String country;
     private String internationalFormat;
     private String nationalFormat;
-    private String lineType;     // mobile / fixed / voip / unknown
-    private String carrier;
+
+    private String lineType;     // mobile, landline, voip, unknown
+    private String carrier;      // Airtel, Jio, Verizon, Twilio etc.
+
+    private boolean voip;        // true = VOIP number
+    private int riskScore;       // 0–100
+    private String riskLevel;    // LOW / MEDIUM / HIGH / CRITICAL
 }
