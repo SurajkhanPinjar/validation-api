@@ -5,12 +5,14 @@ FROM maven:3.9.6-eclipse-temurin-17 AS builder
 
 WORKDIR /app
 
-# Copy only dependency files first (Maven cache boost)
+# Copy pom and download dependencies
 COPY pom.xml .
 RUN mvn -q dependency:go-offline
 
-# Copy source and build JAR
+# Copy project source
 COPY src ./src
+
+# Build JAR
 RUN mvn -q package -DskipTests
 
 # ============================
@@ -20,14 +22,11 @@ FROM eclipse-temurin:17-jre
 
 WORKDIR /app
 
-# Copy the built JAR from builder
+# Copy built artifact
 COPY --from=builder /app/target/*.jar app.jar
 
-# Expose port used in application.yaml
 EXPOSE 8081
 
-# Use environment variables if needed
 ENV JAVA_OPTS=""
 
-# Run app
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
