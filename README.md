@@ -327,9 +327,9 @@ GET /health/status
 # **📊 Rate Limiting (Free Tier)**
 
 | **Limit** | **Value** |
-| --- | --- |
-| Requests per second | **5** |
-| Requests per minute | **100** |
+| --- |-----------|
+| Requests per second | **20**    |
+| Requests per minute | **1200**  |
 
 ---
 
