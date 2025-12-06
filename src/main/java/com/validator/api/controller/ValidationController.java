@@ -2,11 +2,9 @@ package com.validator.api.controller;
 
 import com.validator.api.dto.request.BulkValidationRequest;
 import com.validator.api.dto.request.ValidationRequest;
-import com.validator.api.dto.response.FinalValidationResponse;
 import com.validator.api.service.ValidationOrchestratorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import lombok.RequiredArgsConstructor;
@@ -258,156 +256,168 @@ public class ValidationController {
                                     name = "Bulk Response",
                                     value = """
                                             {
-                                              "success": true,
-                                              "data": {
-                                                "emails": [
-                                                  {
-                                                    "index": 0,
-                                                    "input": "valid.user@gmail.com",
-                                                    "result": {
-                                                      "syntaxValid": true,
-                                                      "hasMxRecord": true,
-                                                      "smtpStatus": "unknown",
-                                                      "disposable": false,
-                                                      "roleBased": false,
-                                                      "score": 100,
-                                                      "domain": "gmail.com"
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 1,
-                                                    "input": "temp@mailinator.com",
-                                                    "result": {
-                                                      "syntaxValid": true,
-                                                      "hasMxRecord": true,
-                                                      "smtpStatus": "unknown",
-                                                      "disposable": true,
-                                                      "roleBased": false,
-                                                      "score": 40,
-                                                      "domain": "mailinator.com"
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 2,
-                                                    "input": "wrong-email-format",
-                                                    "result": {
-                                                      "syntaxValid": false,
-                                                      "hasMxRecord": false,
-                                                      "smtpStatus": "invalid",
-                                                      "disposable": false,
-                                                      "roleBased": false,
-                                                      "score": 10,
-                                                      "domain": null
-                                                    }
-                                                  }
-                                                ],
-                                                "phones": [
-                                                  {
-                                                    "index": 0,
-                                                    "input": "+14155552671",
-                                                    "country": "US",
-                                                    "result": {
-                                                      "valid": true,
-                                                      "country": "US",
-                                                      "internationalFormat": "+1 415-555-2671",
-                                                      "nationalFormat": "(415) 555-2671",
-                                                      "lineType": "mobile",
-                                                      "carrier": "Unknown"
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 1,
-                                                    "input": "9876543210",
-                                                    "country": "IN",
-                                                    "result": {
-                                                      "valid": true,
-                                                      "country": "IN",
-                                                      "internationalFormat": "+91 98765 43210",
-                                                      "nationalFormat": "98765 43210",
-                                                      "lineType": "mobile",
-                                                      "carrier": "Unknown"
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 2,
-                                                    "input": "12345",
-                                                    "country": "US",
-                                                    "result": {
-                                                      "valid": false,
-                                                      "country": "US",
-                                                      "internationalFormat": null,
-                                                      "nationalFormat": null,
-                                                      "lineType": "invalid",
-                                                      "carrier": null
-                                                    }
-                                                  }
-                                                ],
-                                                "ips": [
-                                                  {
-                                                    "index": 0,
-                                                    "input": "8.8.8.8",
-                                                    "result": {
-                                                      "valid": true,
-                                                      "version": "IPv4",
-                                                      "isPrivate": false,
-                                                      "isReserved": false
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 1,
-                                                    "input": "192.168.0.1",
-                                                    "result": {
-                                                      "valid": true,
-                                                      "version": "IPv4",
-                                                      "isPrivate": true,
-                                                      "isReserved": false
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 2,
-                                                    "input": "999.999.999.999",
-                                                    "result": {
-                                                      "valid": false,
-                                                      "version": "unknown",
-                                                      "isPrivate": false,
-                                                      "isReserved": false
-                                                    }
-                                                  }
-                                                ],
-                                                "zipcodes": [
-                                                  {
-                                                    "index": 0,
-                                                    "input": "94016",
-                                                    "result": {
-                                                      "valid": true,
-                                                      "state": "California",
-                                                      "city": null,
-                                                      "country": "US"
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 1,
-                                                    "input": "10001",
-                                                    "result": {
-                                                      "valid": true,
-                                                      "state": "New York",
-                                                      "city": null,
-                                                      "country": "US"
-                                                    }
-                                                  },
-                                                  {
-                                                    "index": 2,
-                                                    "input": "ABCDE",
-                                                    "result": {
-                                                      "valid": false,
-                                                      "state": null,
-                                                      "city": null,
-                                                      "country": "US"
-                                                    }
-                                                  }
-                                                ]
-                                              }
-                                            }
+                                                       "success": true,
+                                                       "data": {
+                                                         "emails": [
+                                                           {
+                                                             "index": 0,
+                                                             "input": "valid.user@gmail.com",
+                                                             "result": {
+                                                               "syntaxValid": true,
+                                                               "hasMxRecord": true,
+                                                               "smtpStatus": "valid",
+                                                               "disposable": false,
+                                                               "roleBased": false,
+                                                               "domain": "gmail.com",
+                                                               "reputationScore": 95,
+                                                               "score": 100
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 1,
+                                                             "input": "temp@mailinator.com",
+                                                             "result": {
+                                                               "syntaxValid": true,
+                                                               "hasMxRecord": true,
+                                                               "smtpStatus": "unreachable",
+                                                               "disposable": true,
+                                                               "roleBased": false,
+                                                               "domain": "mailinator.com",
+                                                               "reputationScore": 20,
+                                                               "score": 40
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 2,
+                                                             "input": "wrong-email-format",
+                                                             "result": {
+                                                               "syntaxValid": false,
+                                                               "hasMxRecord": false,
+                                                               "smtpStatus": "invalid",
+                                                               "disposable": false,
+                                                               "roleBased": false,
+                                                               "domain": null,
+                                                               "reputationScore": 0,
+                                                               "score": 0
+                                                             }
+                                                           }
+                                                         ],
+                                            
+                                                         "phones": [
+                                                           {
+                                                             "index": 0,
+                                                             "input": "+14155552671",
+                                                             "country": "US",
+                                                             "result": {
+                                                               "valid": true,
+                                                               "country": "US",
+                                                               "internationalFormat": "+1 415-555-2671",
+                                                               "nationalFormat": "(415) 555-2671",
+                                                               "lineType": "mobile",
+                                                               "carrier": "Unknown",
+                                                               "isVoip": false,
+                                                               "riskScore": 10
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 1,
+                                                             "input": "9876543210",
+                                                             "country": "IN",
+                                                             "result": {
+                                                               "valid": true,
+                                                               "country": "IN",
+                                                               "internationalFormat": "+91 98765 43210",
+                                                               "nationalFormat": "98765 43210",
+                                                               "lineType": "mobile",
+                                                               "carrier": "Unknown",
+                                                               "isVoip": false,
+                                                               "riskScore": 15
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 2,
+                                                             "input": "12345",
+                                                             "country": "US",
+                                                             "result": {
+                                                               "valid": false,
+                                                               "country": "US",
+                                                               "internationalFormat": null,
+                                                               "nationalFormat": null,
+                                                               "lineType": "invalid",
+                                                               "carrier": null,
+                                                               "isVoip": false,
+                                                               "riskScore": 80
+                                                             }
+                                                           }
+                                                         ],
+                                            
+                                                         "ips": [
+                                                           {
+                                                             "index": 0,
+                                                             "input": "8.8.8.8",
+                                                             "result": {
+                                                               "valid": true,
+                                                               "version": "IPv4",
+                                                               "isPrivate": false,
+                                                               "isReserved": false
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 1,
+                                                             "input": "192.168.0.1",
+                                                             "result": {
+                                                               "valid": true,
+                                                               "version": "IPv4",
+                                                               "isPrivate": true,
+                                                               "isReserved": false
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 2,
+                                                             "input": "999.999.999.999",
+                                                             "result": {
+                                                               "valid": false,
+                                                               "version": "unknown",
+                                                               "isPrivate": false,
+                                                               "isReserved": false
+                                                             }
+                                                           }
+                                                         ],
+                                            
+                                                         "zipcodes": [
+                                                           {
+                                                             "index": 0,
+                                                             "input": "94016",
+                                                             "result": {
+                                                               "valid": true,
+                                                               "state": "California",
+                                                               "city": null,
+                                                               "country": "US"
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 1,
+                                                             "input": "10001",
+                                                             "result": {
+                                                               "valid": true,
+                                                               "state": "New York",
+                                                               "city": null,
+                                                               "country": "US"
+                                                             }
+                                                           },
+                                                           {
+                                                             "index": 2,
+                                                             "input": "ABCDE",
+                                                             "result": {
+                                                               "valid": false,
+                                                               "state": null,
+                                                               "city": null,
+                                                               "country": "US"
+                                                             }
+                                                           }
+                                                         ]
+                                                       }
+                                                     }
                                     """
                             )
                     )

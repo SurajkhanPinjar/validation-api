@@ -2586,3 +2586,41 @@ com.validator.api.exception.ApiKeyMissingException: Missing API Key. Please prov
 2025-12-06T20:30:02.664+05:30 DEBUG 75260 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json]
 2025-12-06T20:30:02.664+05:30 DEBUG 75260 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{data=PhoneValidationResponse(valid=false, country=IN, internationalFormat=null, nationalFormat=null (truncated)...]
 2025-12-06T20:30:02.665+05:30 DEBUG 75260 --- [advanced-validation-api] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T21:51:46.855+05:30  INFO 75896 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Starting ValidationApiApplication using Java 17.0.15 with PID 75896 (/Users/surajkhanpinjar/Java_Project/APIs/validation-api/target/classes started by surajkhanpinjar in /Users/surajkhanpinjar/Java_Project/APIs/validation-api)
+2025-12-06T21:51:46.856+05:30 DEBUG 75896 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-06T21:51:46.856+05:30  INFO 75896 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-12-06T21:51:47.263+05:30  INFO 75896 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-06T21:51:47.267+05:30  INFO 75896 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-06T21:51:47.267+05:30  INFO 75896 --- [advanced-validation-api] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-06T21:51:47.284+05:30  INFO 75896 --- [advanced-validation-api] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-06T21:51:47.285+05:30  INFO 75896 --- [advanced-validation-api] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 409 ms
+2025-12-06T21:51:47.299+05:30 DEBUG 75896 --- [advanced-validation-api] [main] o.s.web.filter.ForwardedHeaderFilter     : Filter 'forwardedHeaderFilter' configured for use
+2025-12-06T21:51:47.380+05:30 DEBUG 75896 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 15 mappings in 'requestMappingHandlerMapping'
+2025-12-06T21:51:47.398+05:30 DEBUG 75896 --- [advanced-validation-api] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-06T21:51:47.406+05:30 DEBUG 75896 --- [advanced-validation-api] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-06T21:51:47.415+05:30 DEBUG 75896 --- [advanced-validation-api] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-06T21:51:47.442+05:30  INFO 75896 --- [advanced-validation-api] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-06T21:51:47.446+05:30  INFO 75896 --- [advanced-validation-api] [main] c.v.api.ValidationApiApplication         : Started ValidationApiApplication in 0.757 seconds (process running for 0.88)
+2025-12-06T21:51:49.379+05:30  INFO 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-06T21:51:49.379+05:30  INFO 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-06T21:51:49.379+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-06T21:51:49.379+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-06T21:51:49.379+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-12-06T21:51:49.379+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48a3ee30
+2025-12-06T21:51:49.379+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@733218cb
+2025-12-06T21:51:49.380+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-06T21:51:49.380+05:30  INFO 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-06T21:51:49.382+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-12-06T21:51:49.384+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-12-06T21:51:49.400+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T21:51:49.487+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2025-12-06T21:51:49.488+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-12-06T21:51:49.493+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2025-12-06T21:51:49.493+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8081/swagger-ui/oauth2-re (truncated)...]
+2025-12-06T21:51:49.495+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-12-06T21:51:49.498+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2025-12-06T21:51:49.498+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-12-06T21:51:49.597+05:30  INFO 75896 --- [advanced-validation-api] [http-nio-8081-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 96 ms
+2025-12-06T21:51:49.610+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-12-06T21:51:49.611+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 48, 46, 49, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-12-06T21:51:49.612+05:30 DEBUG 75896 --- [advanced-validation-api] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
